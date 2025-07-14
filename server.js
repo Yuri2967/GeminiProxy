@@ -2,7 +2,7 @@ const express = require("express");
 const axios = require("axios");
 const app = express();
 app.use(express.json());
-const GEMINI_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemma-2-9b-it:generateContent";
+const GEMINI_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemma-3-4b-it:generateContent";
 
 app.post("/proxy", async (req, res) => {
   try {
